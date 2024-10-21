@@ -32,7 +32,7 @@ struct myExampleTask {
   void init(InitContext const&)
   {
     // define axes you want to use
-    const AxisSpec axisCounter{1, 0, +1, ""};
+    const AxisSpec axisCounter{1, 0, +1, "hello"};
     const AxisSpec axisEta{30, -1.5, +1.5, "#eta"};
     const AxisSpec axisPt{nBinsPt, 0, 10, "p_{T}"};
     const AxisSpec axisDeltaPt{100, -1.0, +1.0, "#Delta(p_{T})"};
