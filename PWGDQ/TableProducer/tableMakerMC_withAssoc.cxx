@@ -1400,6 +1400,7 @@ struct TableMakerMC {
                          aod::McCollisions const& mcCollisions, aod::McParticles const& mcParticles)
   {
     fullSkimming<gkEventFillMapWithMults, 0u, gkMuonFillMapWithCov, 0u, gkMFTFillMap>(collisions, bcs, nullptr, tracksMuon, nullptr, mftTracks, nullptr, fwdTrackAssocs, mftAssocs, mcCollisions, mcParticles);
+  }
 
   void processPbPb(MyEventsWithCentAndMults const& collisions, aod::BCsWithTimestamps const& bcs,
                    MyBarrelTracksWithCov const& tracksBarrel, MyMuonsWithCov const& tracksMuon, MFTTrackLabeled const& mftTracks,
