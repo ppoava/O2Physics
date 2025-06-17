@@ -1021,7 +1021,6 @@ struct muonQa {
     return dimuon.Pt();
   }
 
-
   template <typename TMuons, typename TCandidates>
   void GetMuonPairs(TMuons const& muons, TCandidates const& matchingCandidates, const std::map<uint64_t, VarColl>& collisionInfos,
                     std::vector<MuonPair>& muonPairs,
