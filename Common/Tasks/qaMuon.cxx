@@ -2596,8 +2596,7 @@ struct muonQa {
       if (configRealign.fDoRealign) {
         dcaXPair = muonPos.dcaX - muonNeg.dcaX;
         dcaYPair = muonPos.dcaY - muonNeg.dcaY;
-      }
-      else {
+      } else {
         dcaXPair = muonPosPV.dcaX - muonNegPV.dcaX;
         dcaYPair = muonPosPV.dcaY - muonNegPV.dcaY;
       }
