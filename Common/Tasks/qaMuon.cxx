@@ -622,7 +622,6 @@ struct muonQa {
         dcaHistosGlobalSubtractedMCHpCut[j][0]["DCA_x_vs_z"] = registryDCA.add((histPath + "DCA_x_vs_z").c_str(), std::format("scaled MFT DCA(x) - MCH DCA(x) - vs. z - {} for MCH p > cut", quadrant).c_str(), {HistType::kTH2F, {dcazAxis, dcaxMCHAxis}});
         dcaHistosGlobalSubtractedMCHpCut[j][0]["DCA_y_vs_z"] = registryDCA.add((histPath + "DCA_y_vs_z").c_str(), std::format("scaled MFT DCA(y) - MCH DCA(y) - vs. z - {} for MCH p > cut", quadrant).c_str(), {HistType::kTH2F, {dcazAxis, dcayMCHAxis}});
 
-
         histPath = std::string("Alignment/mixed-event/DCA/MFT/") + quadrant + "/";
         dcaHistosMixedEvents[0][j][0]["DCA_x"] = registryDCA.add((histPath + "DCA_x").c_str(), std::format("DCA(x) - {}", quadrant).c_str(), {HistType::kTH1F, {dcaxMFTAxis}});
         dcaHistosMixedEvents[0][j][1]["DCA_x"] = registryDCA.add((histPath + "DCA_x_pos").c_str(), std::format("DCA(x) - {} charge > 0", quadrant).c_str(), {HistType::kTH1F, {dcaxMFTAxis}});
